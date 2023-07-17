@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.banner {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.801),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+}
+.interaction {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: -10px 0 50px 25px black;
+}
+.interaction_buttons {
+  display: flex;
+  justify-content: center;
+}
+.interaction_buttons button {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
