@@ -1,0 +1,31 @@
+[{
+        "name": "goodtime",
+        "poster": "https://images.pexels.com/photos/2932418/pexels-photo-2932418.jpeg?auto=compress&cs=tinysrgb&w=1500",
+        "songName": "It's always a good time"
+    },
+    {
+        "name": "jhamjham",
+        "poster": "https://images.pexels.com/photos/10495915/pexels-photo-10495915.jpeg?auto=compress&cs=tinysrgb&w=1500",
+        "songName": "Jham Jham Paryo Pani"
+    },
+    {
+        "name": "ownparadise",
+        "poster": "https://images.pexels.com/photos/4571219/pexels-photo-4571219.jpeg?auto=compress&cs=tinysrgb&w=1500",
+        "songName": "AC Milan Anthem"
+    },
+    {
+        "name": "snapxwodin",
+        "poster": "https://images.pexels.com/photos/754769/pexels-photo-754769.jpeg?auto=compress&cs=tinysrgb&w=1500",
+        "songName": "snap X wo din"
+    },
+    {
+        "name": "theweekend",
+        "poster": "https://images.pexels.com/photos/10568846/pexels-photo-10568846.jpeg?auto=compress&cs=tinysrgb&w=1500",
+        "songName": "the weekend"
+    },
+    {
+        "name": "wakemeup",
+        "poster": "https://images.pexels.com/photos/1524620/pexels-photo-1524620.jpeg?auto=compress&cs=tinysrgb&w=1500",
+        "songName": "Wake Me Up"
+    }
+]
