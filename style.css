@@ -3,18 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: sans-serif;
+}
 .banner {
   position: relative;
   height: 100vh;
-  background-image: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.801),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.banner_title {
+  color: white;
+}
+
 .interaction {
   position: absolute;
   bottom: 0;
