@@ -7,6 +7,7 @@ const global = {
     nextButton: document.querySelector('.next_button'),
     prevButton: document.querySelector('.prev_button'),
     pauseButton: document.querySelector('.pause_button'),
+    pauseButtonIcon: document.querySelector('.pause_button_icon'),
   },
   overLays: {
     banner: document.querySelector('.banner'),
@@ -14,6 +15,7 @@ const global = {
   },
   variable: {
     currentSongIdx: 0,
+    isSongPaused: false,
   },
   config: {
     webSurfurConfig: {
@@ -44,6 +46,20 @@ global.interactionButtons.nextButton.addEventListener('click', () =>
 global.interactionButtons.prevButton.addEventListener('click', () =>
   playNextSong('left')
 );
+global.interactionButtons.pauseButton.addEventListener('click', () => {
+  if (!global.variable.isSongPaused) {
+    global.interactionButtons.pauseButtonIcon.setAttribute('name', 'play');
+    wavesurfer.pause();
+  } else {
+    global.interactionButtons.pauseButtonIcon.setAttribute(
+      'name',
+      'pause-outline'
+    );
+    wavesurfer.play();
+  }
+
+  global.variable.isSongPaused = !global.variable.isSongPaused;
+});
 
 const playNextSong = async direction => {
   //change song index logic
@@ -62,7 +78,10 @@ const playNextSong = async direction => {
   //change the banner
   global.overLays.banner.style.backgroundImage = `linear-gradient(to top,rgba(0, 0, 0, 0.801),rgba(0, 0, 0, 0.5)),
     url('${songs[currentSongIndex % songs.length].poster}')`;
+  global.overLays.bannerTitle.textContent =
+    songs[currentSongIndex % songs.length].songName;
 
-  wavesurfer.play();
+  //is song is paused then prevent it from playing..
+  !global.variable.isSongPaused && wavesurfer.play();
   wavesurfer.on('finish', () => playNextSong('right'));
 };
