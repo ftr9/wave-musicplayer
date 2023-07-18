@@ -8,6 +8,7 @@ Music player with waves is where you can play, pause and change music with its b
 - [HTML + CSS]('https://www.w3schools.com/html/html_css.asp') - for frontend i.e styling
 - [wavesurfer.js]('https://wavesurfer-js.org/') - an open-source audio visualization library for creating interactive, customizable waveforms.
 - [pexels.com]("https://www.pexels.com/") - for high quality images
+- [vite](https://vitejs.dev/) - for frontend tooling
 
 ## FEATURES
 
